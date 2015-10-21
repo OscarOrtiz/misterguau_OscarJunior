@@ -7,7 +7,7 @@
 	<body>
 <?php
 			//realizamos la conexión con mysql
-			$con = mysqli_connect('172.24.49.56', 'root', '', 'bd_botiga_animals');
+			$con = mysqli_connect('localhost', 'root', '', 'bd_botiga_animals');
 
 			$sql = "SELECT * FROM tbl_anunci WHERE ";
 
