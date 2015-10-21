@@ -7,7 +7,7 @@
 	<body>
 <?php
 			//realizamos la conexión con mysql
-			$con = mysqli_connect('172.24.49.56', 'root', '', 'bd_botiga_animals');
+			$con = mysqli_connect('localhost', 'root', '', 'bd_botiga_animals');
 
 			$sql = "SELECT * FROM tbl_anunci WHERE ";
 
@@ -23,7 +23,7 @@
 				echo "<b>Nombre:</b>" .$tbl_anunci['anu_nom']."<br/>";
 				echo "<b>Anuncio:</b>" .$tbl_anunci['anu_contingut']."<br/>";
 				echo "<b>Fecha:</b>" .$tbl_anunci['anu_data']."<br/>";
-
+				<br>
 			}	
 			
 			//cerramos la conexión con la base de datos
