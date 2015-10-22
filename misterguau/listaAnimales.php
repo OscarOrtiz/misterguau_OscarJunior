@@ -10,7 +10,8 @@
 		<a href="listaanimales.php?opc=2">Consultar animales perdidos</a><br>
 
 <?php
-	if (isset($_GET['opc']) and $_GET['opc']==1) {
+
+if (isset($_GET['opc']) and $_GET['opc']==1) {
 		echo "<form name='form1' action='nuevoanuncio.php' method='POST'>";
 		echo "anu_contingut:<input type='text' name='anu_contingut'><br/>";
 		echo "anu_nom:<input type='text' name='anu_nom'><br/>";
@@ -25,8 +26,9 @@
 	}else{
 		echo "<form name='form1' action='formlarioAnimales.php' method='GET'>";
 		echo "Ingrese anuncio a buscar:<input type='text' name='buscar'><br/>";
-		echo "<input type='submit' value='Buscar'><br/>";
 		echo "</form>";
+		echo "<input type='submit' value='Buscar'><br/>";
+		
 	}
 ?>
 </body>

@@ -30,7 +30,7 @@ class conexion{
 
 				}	
 
-			echo "$fila[anu_nom]"."<br />";
+			echo "<br />$fila[anu_nom]"."<br />";
 			echo "$fila[anu_contingut]"."<br /> <br>";
 		}
 	}
