@@ -1,0 +1,30 @@
+div{
+font-family: arial
+
+}
+
+
+.tabla{
+   color:#111; 
+   width: 90%;
+   background-color: #fff;
+}
+
+.lista{
+
+  padding-left: 5;
+  padding-right: 10;
+  padding-top: 0;
+
+}
+.lista2{
+text-align: left;
+
+
+ 
+}
+.foto{
+	width: 200px;
+	height: 175px;
+ 	
+}

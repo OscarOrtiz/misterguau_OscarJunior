@@ -1,7 +1,15 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <!-- saved from url=(0026)http://www.misterguau.com/ -->
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="es" lang="es"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Productos para mascotas: comida y accesorios para animales</title>
+<title>Animales perdidos</title>
+
+<?php
+      $conexion = mysqli_connect('localhost','root','','bd_botiga_animals') or die ('Conexión errónea');
+      $raza2 = mysqli_query($conexion, "SELECT * FROM tbl_raca");
+?>
+<script src="js/jquery-1.4.3min.js"></script>
+<script src="js/raza.js"></script>
+
 
 <meta name="description" content="Tienda online de productos para mascotas. Conoce nuestro Compromiso Social Misterguau y descubre las razones por las que confiar a Misterguau la compra de tu mascota.">
 <meta name="keywords" content="productos para mascotas, comprar cachorros, comprar mascotas, comprar mascotas misterguau, comida para mascotas, accesorios mascotas, protectoras de animales, apadrinar cachorros, adopcion animales misterguau, criticas misterguau, multas misterguau">
@@ -41,9 +49,10 @@
 <link rel="stylesheet" type="text/css" href="./Productos para mascotas_ comida y accesorios para animales_files/reset.css" media="all">
 <link rel="stylesheet" type="text/css" href="./Productos para mascotas_ comida y accesorios para animales_files/styles.css" media="all">
 <link rel="stylesheet" type="text/css" href="./Productos para mascotas_ comida y accesorios para animales_files/clears.css" media="all">
+<link rel="stylesheet" type="text/css" href="./PERDIDOS.css" media="all">
 <link rel="stylesheet" type="text/css" href="./Productos para mascotas_ comida y accesorios para animales_files/j2t-rewardpoints.css" media="all">
 <link rel="stylesheet" type="text/css" href="./Productos para mascotas_ comida y accesorios para animales_files/print.css" media="print">
-<script type="text/javascript" src="./Productos para mascotas_ comida y accesorios para animales_files/prototype.js"></script>
+<!--<script type="text/javascript" src="./Productos para mascotas_ comida y accesorios para animales_files/prototype.js"></script>-->
 <script type="text/javascript" src="./Productos para mascotas_ comida y accesorios para animales_files/validation.js"></script>
 <script type="text/javascript" src="./Productos para mascotas_ comida y accesorios para animales_files/builder.js"></script>
 <script type="text/javascript" src="./Productos para mascotas_ comida y accesorios para animales_files/effects.js"></script>
@@ -108,30 +117,17 @@
   	  </div>
   <div style="height:6px; background-color:#000;margin-bottom:10px;"></div>		
 				
-        <div class="caja_categ_product">
-            <div class="content_izq"><div class="SC_caja">
+        
+            <div class="content_izq"><div class="banner"><a title="Tipos de pago" href="http://www.misterguau.com/index.php/condiciones" target="_self"><img src="./Productos para mascotas_ comida y accesorios para animales_files/VISA.jpg" alt="Tipos de pago aceptados"></a></div>
+<div class="banner"><a href="mailto: clientes@misterguau.com"><img src="./Productos para mascotas_ comida y accesorios para animales_files/Contactanos.jpg" alt="Tienda online"></a></div>
+<div class="banner"><a title="Contactar tiendas físicas" href="http://www.misterguau.tv/tiendas-mister-guau" target="_blank"><img src="./Productos para mascotas_ comida y accesorios para animales_files/Contacto02.jpg" alt="Contactar tiendas físicas"></a></div>
+<div class="banner"><a title="Contactar veterinarios" href="http://www.misterguau.tv/veterinaria-mister-guau" target="_blank"><img src="./Productos para mascotas_ comida y accesorios para animales_files/Contacto03_1.jpg" alt="Contactar veterinarios"></a></div>
+<div class="banner"><a title="10% Dto extra en todos tus pedidos!" href="http://www.misterguau.com/Promociones" target="_self"></a><a title="Nuestro compromiso social" href="http://www.misterguau.com/Compromiso_social" target="_self"><img src="./Productos para mascotas_ comida y accesorios para animales_files/Compromiso_MISTERGUAU_1.jpg" alt="Compromiso social MISTERGUAU"></a></div>
+<div class="banner"><a style="font-size: 12px;" title="Las mejores ofertas para tus mascotas" href="http://www.misterguau.com/index.php/ofertas.html" target="_self"><img src="./Productos para mascotas_ comida y accesorios para animales_files/file_2.jpg" alt="Las mejores ofertas para mascotas"></a></div>
+<div class="banner"></div>
 
-</div>
-<div class="color-line-after-sidebar">&nbsp;</div><div class="SB_caja">
-	<div class="search-box">
-		<form id="search_mini_form" action="http://www.misterguau.com/index.php/catalogsearch/result/" method="get">
-			<input name="" type="button" id="searchbutton" value="">
-			<input name="q" type="text" value="Buscar..." id="searchbox" onclick="VaciarBox(this);">
-			<div id="search_autocomplete" class="search-autocomplete"></div>
-			<script type="text/javascript">
-		    //<![CDATA[
-		        var searchForm = new Varien.searchForm('search_mini_form', 'search', '');
-		        searchForm.initAutocomplete('http://www.misterguau.com/index.php/catalogsearch/ajax/suggest/', 'search_autocomplete');
-		    //]]>
-		    </script>
-		    <script type="text/javascript">
-			  function VaciarBox(box){
-			    box.value = "";
-			  }
-			  </script>
-		</form>
-	</div>
-</div>
+
+
 <div class="vertical-nav-container box base-mini">
     <div id="vertical-nav">
 
@@ -177,15 +173,8 @@
 		</div>
    	 </div>
     </div>
-</div> <p>&nbsp;</p>
+</div> 
 
-<p style="text-align: left;">&nbsp;</p>
-<p style="text-align: left;">&nbsp;</p>
-<p style="text-align: left;">&nbsp;</p>
-<p style="text-align: left;">&nbsp;</p>
-<p style="text-align: left;">&nbsp;</p>
-<p style="text-align: left;">&nbsp;</p>
-<p>
 <script src="./Productos para mascotas_ comida y accesorios para animales_files/buttons.js" type="text/javascript"></script>
 <script type="text/javascript">// <![CDATA[
 stLight.options({publisher: "95e01ef6-d710-492e-b27e-2b57dbb37911"});
@@ -194,64 +183,7 @@ stLight.options({publisher: "95e01ef6-d710-492e-b27e-2b57dbb37911"});
             <div class="box_specialoffers">
                 
                 <div class="std">
-    <!--div>
-
-<ul class="tabs">
-    <li><a href="#tab1">Ofertas</a></li>
-    <li><a href="#tab2">Perros</a></li>
-    <li><a href="#tab3">Gatos</a></li>
-    <li><a href="#tab4">Peces</a></li>
-    <li><a href="#tab5">Roedores</a></li>
-    <li><a href="#tab6">Pájaros</a></li>
-    <li><a href="#tab7">Reptiles</a></li>
-</ul>
-
-<div class="tab_container">
-    <div id="tab1" class="tab_content">
-        Productos 1
-    </div>
-    <div id="tab2" class="tab_content">
-       Productos 2
-    </div>
-     <div id="tab3" class="tab_content">
-       Productos 3
-    </div>
-     <div id="tab4" class="tab_content">
-       Productos 4
-    </div>
-     <div id="tab5" class="tab_content">
-       Productos 5
-    </div>
-     <div id="tab6" class="tab_content">
-       Productos 6
-    </div>
-     <div id="tab7" class="tab_content">
-       Productos 7
-    </div>
-</div>
-<script type="text/javascript">
-	jQuery(document).ready(function() {
-
-		//When page loads...
-		jQuery(".tab_content").hide(); //Hide all content
-		jQuery("ul.tabs li:first").addClass("active").show(); //Activate first tab
-		jQuery(".tab_content:first").show(); //Show first tab content
-
-		//On Click Event
-		jQuery("ul.tabs li").click(function() {
-
-			jQuery("ul.tabs li").removeClass("active"); //Remove any "active" class
-			jQuery(this).addClass("active"); //Add "active" class to selected tab
-			jQuery(".tab_content").hide(); //Hide all tab content
-
-			var activeTab = jQuery(this).find("a").attr("href"); //Find the href attribute value to identify the active tab + content
-			jQuery(activeTab).fadeIn(); //Fade in the active ID content
-			return false;
-		});
-
-	});
-</script>
-</div-->
+ 
 <p><strong><script type="text/javascript" src="./Productos para mascotas_ comida y accesorios para animales_files/interaktingslider.js"></script><style>#frame{text-align:left;width:680px;        background:url(http://www.misterguau.com/skin/interaktingslider/default/images/base_mini_head_bg.gif) repeat-x #fff;   }#frame div{}#frame div div{}#top-left{margin-top:0px; margin-left:0px; width:10px; height:10px;display:none;}#top-center{margin-top:0px; margin-left:10px; width:582px; height:10px;display:none;}#top-right{margin-top:0px; margin-left:582px; width:10px; height:10px;display:none;}#middle-left{margin-top:10px; margin-left:0px; width:10px; height:280px;display:none;}#middle-center{   width:680px; height:200px;}#middle-right{margin-top:10px; margin-left:670px; width:10px; height:280px;display:none;}#bottom-left{margin-top:290px; margin-left:0px;width:10px;height:30px;display:none;}#bottom-center{display:none;}#bottom-right{margin-top:290px;margin-left:670px;width:10px;height:30px;display:none;}.slide{position:absolute;text-align:left;width:680px;height:200px;margin:0px;background:#f8f7f5;color:#2f2f2f; font:12px/1.55em arial, helvetica, sans-serif;overflow: hidden;}.slide * {margin:0 ; padding:0;}.slide table {margin: auto; padding: auto;}.slide h1, .slide h2, .slide h3, .slide h4{color:#e65505; text-transform:uppercase;}.slide h1 { font-size:2em; line-height:1.17; }.slide h2 { font-size:1.5em; }.slide h3 { font-size:1.35em; }.slide h4 { font-size:1.05em; }.slide h5 { font-size:1.05em; }.slide h6 { font-size:.95em; }.slide a { color:#1e7ec8; text-decoration:underline; }.slide a:hover { color:#1e7ec8; text-decoration:underline; }.slide a img { border:0;}#slide-content{text-align:left;width:680px;height:277px;overflow:hidden;}#slide-commands{position:absolute;text-align:center;width:582px;border-top:1px solid #DDD;margin-top:258px;margin-left:-1px;padding-top:2px;z-index:5;background:#fff;display: none;}#slide-commands a{display:inline-block;text-decoration: none ;margin:2px;overflow:visible;    width:auto;    padding:1px 8px;    color:#fff;    border:1px solid #de5400;    font:bold 12px arial, sans-serif !important;    cursor:pointer;    text-align:center;    vertical-align:middle;    display: none;}#prev{}#next{}.active{background:#de5400;}.normal{background:#f18200;}#btns{width:256px;height:22px;position:relative;margin:-30px 0px -22px 226px;display: none;}.prev-next{width:42px;height:20px;float:left;background-color:#666;border:#FFF solid 1px;}.prev-next a{color:#FFF;text-decoration:none;font-size:12px;display:block;text-align:center;padding-top:2px;width:40px;height:18px;display:block;background-color:#666;border:#FFF solid 1px;}.prev-next a:hover{color:#666;text-decoration:none;font-size:12px;display:block;text-align:center;padding-top:2px;width:40px;height:18px;display:block;background-color:#FFF;border:#b90812 solid 1px;}.arrows{width:10px;height:22px;float:left;margin-left:6px;}.num-img{width:20px;height:22px;float:left;margin-left:6px;}.num-img a{display:block;width:18px;height:17px;background-color:#666;border:#FFF solid 1px;text-decoration:none;text-align:center;color:#fff;font-size:12px;padding-top:3px;}.num-img a:hover{display:block;width:18px;height:17px;background-color:#FFF;border:#b90812 solid 1px;text-decoration:none;text-align:center;color:#666;font-size:12px;padding-top:3px;}.num-img-hover-button{display:block !important;width:18px !important;height:17px !important;background-color:#FFF !important;border:#b90812 solid 1px !important;text-decoration:none !important;text-align:center !important;color:#666 !important;font-size:12px !important;padding-top:3px !important;}#div-interaktingslider {width: 680px;overflow: hidden;}</style>
 </strong></p><div id="div-interaktingslider" align="center"><strong>
 </strong></div><strong>
@@ -271,141 +203,117 @@ stLight.options({publisher: "95e01ef6-d710-492e-b27e-2b57dbb37911"});
 </strong><p></p>
 
 
-<p>	  <!--div class="slide-banners">
-	  	<img src="http://www.misterguau.com/skin/frontend/blank/theme048/images/banner-mister-guau-selection.png" width="690px" height="200px" alt="Mister Guau" title="Mister Guau">
-	  </div-->
-<div class="footer"></div> <!--div class="title-specials">
-     <h2>Superofertas!</h2>
-     <div class="ver-todas"><a href="#">ver todas ></a></div>
-      </div>
-      <div class="fila-prods">
-      	<div class="prod">
-        	<div class="img-prod"><a href="#"><img src="images/prod1.jpg" width="95" height="135" /></a></div>
-            <div class="titulo-prod">Royal C Boxer<br /><strong>+Regalo</strong> imanes perritos!</div>
-            <div class=>__</div>
-            <div class="antes">Antes 23,50</div>
-            <div class="ahora">AHORA 19,95</div>
-            <div class="anadir"><a href="#">AÑADIR</a></div>
-            <div class="mas-info"><a href="#">+ INFO</a></div>
-      	</div>
-        <div class="prod">
-        	<div class="img-prod"><a href="#"><img src="images/prod1.jpg" width="95" height="135" /></a></div>
-            <div class="titulo-prod">Royal C Boxer<br /><strong>+Regalo</strong> imanes perritos!</div>
-            <div class=>__</div>
-            <div class="antes">Antes 23,50</div>
-            <div class="ahora">AHORA 19,95</div>
-            <div class="anadir"><a href="#">AÑADIR</a></div>
-            <div class="mas-info"><a href="#">+ INFO</a></div>
-      	</div>
-        <div class="prod">
-        	<div class="img-prod"><a href="#"><img src="images/prod1.jpg" width="95" height="135" /></a></div>
-            <div class="titulo-prod">Royal C Boxer<br /><strong>+Regalo</strong> imanes perritos!</div>
-            <div class=>__</div>
-            <div class="antes">Antes 23,50</div>
-            <div class="ahora">AHORA 19,95</div>
-            <div class="anadir"><a href="#">AÑADIR</a></div>
-            <div class="mas-info"><a href="#">+ INFO</a></div>
-      	</div>
-        <div class="prod">
-        	<div class="img-prod"><a href="#"><img src="images/prod1.jpg" width="95" height="135" /></a></div>
-            <div class="titulo-prod">Royal C Boxer<br /><strong>+Regalo</strong> imanes perritos!</div>
-            <div class=>__</div>
-            <div class="antes">Antes 23,50</div>
-            <div class="ahora">AHORA 19,95</div>
-            <div class="anadir"><a href="#">AÑADIR</a></div>
-            <div class="mas-info"><a href="#">+ INFO</a></div>
-      	</div>
-        <div class="prod">
-        	<div class="img-prod"><a href="#"><img src="images/prod1.jpg" width="95" height="135" /></a></div>
-            <div class="titulo-prod">Royal C Boxer<br /><strong>+Regalo</strong> imanes perritos!</div>
-            <div class=>__</div>
-            <div class="antes">Antes 23,50</div>
-            <div class="ahora">AHORA 19,95</div>
-            <div class="anadir"><a href="#">AÑADIR</a></div>
-            <div class="mas-info"><a href="#">+ INFO</a></div>
-      	</div>
-      </div>
-     <div class="fila-prods">
-      	<div class="prod">
-        	<div class="img-prod"><a href="#"><img src="images/prod1.jpg" width="95" height="135" /></a></div>
-            <div class="titulo-prod">Royal C Boxer<br /><strong>+Regalo</strong> imanes perritos!</div>
-            <div class=>__</div>
-            <div class="antes">Antes 23,50</div>
-            <div class="ahora">AHORA 19,95</div>
-            <div class="anadir"><a href="#">AÑADIR</a></div>
-            <div class="mas-info"><a href="#">+ INFO</a></div>
-      	</div>
-        <div class="prod">
-        	<div class="img-prod"><a href="#"><img src="images/prod1.jpg" width="95" height="135" /></a></div>
-            <div class="titulo-prod">Royal C Boxer<br /><strong>+Regalo</strong> imanes perritos!</div>
-            <div class=>__</div>
-            <div class="antes">Antes 23,50</div>
-            <div class="ahora">AHORA 19,95</div>
-            <div class="anadir"><a href="#">AÑADIR</a></div>
-            <div class="mas-info"><a href="#">+ INFO</a></div>
-      	</div>
-        <div class="prod">
-        	<div class="img-prod"><a href="#"><img src="images/prod1.jpg" width="95" height="135" /></a></div>
-            <div class="titulo-prod">Royal C Boxer<br /><strong>+Regalo</strong> imanes perritos!</div>
-            <div class=>__</div>
-            <div class="antes">Antes 23,50</div>
-            <div class="ahora">AHORA 19,95</div>
-            <div class="anadir"><a href="#">AÑADIR</a></div>
-            <div class="mas-info"><a href="#">+ INFO</a></div>
-      	</div>
-        <div class="prod">
-        	<div class="img-prod"><a href="#"><img src="images/prod1.jpg" width="95" height="135" /></a></div>
-            <div class="titulo-prod">Royal C Boxer<br /><strong>+Regalo</strong> imanes perritos!</div>
-            <div class=>__</div>
-            <div class="antes">Antes 23,50</div>
-            <div class="ahora">AHORA 19,95</div>
-            <div class="anadir"><a href="#">AÑADIR</a></div>
-            <div class="mas-info"><a href="#">+ INFO</a></div>
-      	</div>
-        <div class="prod">
-        	<div class="img-prod"><a href="#"><img src="images/prod1.jpg" width="95" height="135" /></a></div>
-            <div class="titulo-prod">Royal C Boxer<br /><strong>+Regalo</strong> imanes perritos!</div>
-            <div class=>__</div>
-            <div class="antes">Antes 23,50</div>
-            <div class="ahora">AHORA 19,95</div>
-            <div class="anadir"><a href="#">AÑADIR</a></div>
-            <div class="mas-info"><a href="#">+ INFO</a></div>
-      	</div>
-      </div>
-       <div class="footer"></div-->
+<p>	  
 
-<!--div class="category-products">
- <div class="listing-border"-->
-<!--/div>
-        </div-->
+<div class="footer"></div> 
+
+
+
 <p></p>
 <caption></caption> 
 <tbody>
-  <?php
 
-      //realizamos la conexión con mysql
-      $con = mysqli_connect('localhost', 'root', '', 'bd_botiga_animals');
+<font class="titu" >BUSCAR ANIMAL PERDIDO</font><br /><br>
 
-      $sql = "SELECT * FROM tbl_anunci WHERE ";
+<form method="GET" action="formlarioAnimales.php" class="forma">   
+ 
+    <p>Animal: <select id='anu_tipus' name='anu_tipus' onchange="cargarRazas()">
+      <option value="1">Perro</option>
+      <option value="2">Gato</option>
+      <option value="3">Pajaro</option>
+      <option value="4">Otros</option>
+    </select>
+  Raza: <select id='raca_id' name='raca_id'>
+      <?php
+                                while ($opRaza = mysqli_fetch_array($raza2)){
+                                    echo '<option value="'.$opRaza['raca_id'].'">'.utf8_encode($opRaza['raca_nom']).'</option>';
+                                }
+                            ?>
+    </select><p>Municipio:
+    <select name='mun_id' id='mun_id'>
+      <?php
+      $conexion2 = mysqli_connect('localhost','root','','bd_botiga_animals') or die ('Conexión errónea');
+      $muni2 = mysqli_query($conexion2, "SELECT * FROM tbl_municipi");
+                                while ($opMun = mysqli_fetch_array($muni2)){
+                                    echo '<option value="'.$opMun['mun_id'].'">'.utf8_encode($opMun['municipi_nom']).'</option>';
+                                }
+                            ?>
+    </select></p></p>
 
-
-      $sql.= "anu_tipus = 'Perdut'";
-      $datos = mysqli_query($con, $sql);
-    
-
-      while($tbl_anunci = mysqli_fetch_array($datos)){
-
-        
-        echo "<b>Id: </b>" .$tbl_anunci['anu_id']."<br/>";
-        echo "<b>Nombre: </b>" .$tbl_anunci['anu_nom']."<br/>";
-        echo "<b>Anuncio: </b>" .$tbl_anunci['anu_contingut']."<br/>";
-        echo "<b>Fecha: </b>" .$tbl_anunci['anu_data']."<br/>";
-        echo "<br>";
-      } 
+    <p><input type="submit" value="Buscar" name="B2"><br /><br><br>
       
-      //cerramos la conexión con la base de datos
-      mysqli_close($con);
-    ?>
+</form>   
+
+
+
+
+
+
+<font class="titu2" >INTRODUCE TU ANUNCIO</font><br /><br><br>
+
+<form action="<?php echo htmlentities($_SERVER['PHP_SELF']); ?>" method="post" class="forma">
+   <p>Titulo del anuncio: <input type='text' name='anuncio' value="$varAnu_nom" placeholder="Introduce Titulo del anuncio" /></p>
+   <p>Fecha: <input type='date' name='anu_data' value="$varData_nom"/></p>
+  <p>Animal
+    <select name="anu_tipus">
+      <option value="1">Perro</option>
+      <option value="2">Gato</option>
+      <option value="3">Pajaro</option>
+      <option value="4">Otros</option>
+    </select>
+  Raza
+    <select name="raca_id">
+      <option value="8">Boxer</option>
+      <option value="9">Pastor alemany</option>
+      <option value="10">Golden retriever</option>
+      <option value="11">Husky</option>
+      <option value="12">Border collie</option>
+      <option value="13">Creuat</option>
+      <option value="14">Beagle</option>
+      <option value="15">Persa</option>
+      <option value="16">Siamés</option>
+      <option value="17">Comú</option>
+      <option value="18">Abisini</option>
+      <option value="19">Bobtail</option>
+      <option value="20">Canari</option>
+      <option value="21">Periquito</option>
+      <option value="22">Fura</option>
+      <option value="23">Conill</option>
+      <option value="23">Hàmster</option>
+      <option value="24">Teixó</option>
+      <option value="25">Ánec</option>
+      <option value="26">Ornitorinc</option>
+    </select>
+    </p>
+  </p>
+    <p>Municipio
+    <select name="mun_id">
+      <option value="1">Barcelona</option>
+      <option value="2">Sant Feliu de Llobregat</option>
+      <option value="3">Sant Joan d'Espí</option>
+      <option value="4">El Prat de Llobregat</option>
+      <option value="5">L'Hospitalet de Llobregat</option>
+      <option value="6">Martorell</option>
+      <option value="7">Cornellà de Llobregat</option>
+      <option value="8">Castelldefels</option>
+      <option value="9">Viladecans</option>
+      <option value="10">Begues</option>
+      <option value="11">Castellbisbal</option>
+      <option value="12">Sant Sadurní d´Anoia</option>
+      <option value="13">Rubí</option>
+      <option value="14">Sant Cugat del Vallès</option>
+      <option value="15">Sitges</option>
+    </select>
+    </p>
+  </p>
+   <p>Imagen: <input type="image" name="anu_foto" value="$varAnu_foto"/></p>
+  <p>Contenido del anuncio:<br/>
+   <textarea name="anu_contenido" rows="7" cols="60" value="$varAnu_contenido"></textarea>
+  </p>
+   <p><input type='submit' name='Introducir' value='Submit' size="20"/></p>
+</form>
+ 
+<!--
 <tr>
 <td style="padding-left: 50px; padding-right: 50px;">
 <p>&nbsp;</p>
@@ -416,7 +324,7 @@ stLight.options({publisher: "95e01ef6-d710-492e-b27e-2b57dbb37911"});
 </td>
 </tr>
 </tbody>
-</table>
+</table> !-->
 <p>&nbsp;</p>
 <p style="text-align: center;">&nbsp;</p>
 <p style="text-align: center;">&nbsp;</p>
@@ -474,54 +382,8 @@ stLight.options({publisher: "95e01ef6-d710-492e-b27e-2b57dbb37911"});
 <div class="banner"><a href="http://www.misterguau.com/index.php/metodos"><img src="./Productos para mascotas_ comida y accesorios para animales_files/banner2.jpg" alt=""></a></div><div class="banner"><a title="GARANTIA MASCOTAS" href="http://www.misterguau.com/GARANTIA_MASCOTAS_MISTERGUAU.pdf" target="_blank"><img title="GARANTIA" src="./Productos para mascotas_ comida y accesorios para animales_files/banner3_1.jpg" alt="GARANTIA"></a></div><div class="block block-subscribe">
 <a href="http://www.misterguau.com/tienda/banner">
 <img src="./Productos para mascotas_ comida y accesorios para animales_files/BannerCR.png">
-<img src="./Productos para mascotas_ comida y accesorios para animales_files/Banner_portes.png"></a><!--
-    <div class="main-block">
-								<div class="border-bot">
-									<div class="border-left">
-										<div class="border-right">
-											<div class="corner-left-top">
-												<div class="corner-right-top">
-													<div class="corner-left-bot">
-														<div class="corner-right-bot">
-															<div class="full-width">        <div class="block-title">   
-             <div class="sideblock-title">
-								<div class="border-left">
-									<div class="border-right">
-										<div class="border-top">
-											<div class="corner-left-top">
-												<div class="corner-right-top">                        
-           		 <h2>Boletín de noticias<a name="newsletter-box"></a></h2>  
-             </div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>         
-        </div>
-        <div class="block-content">
-            <form action="http://www.misterguau.com/index.php/newsletter/subscriber/new/" method="post" id="newsletter-validate-detail">
-                <fieldset>
-                    <legend>Boletín de noticias</legend>
-                                        <label for="newsletter">Subscribirse al boletín de noticias</label>
-                    <input name="email" type="text" id="newsletter" class="input-text required-entry validate-email" />
-                    <button type="submit" class="button"><span><span><span>Subscribirse</span></span></span></button>
-                </fieldset>
-            </form>
-        </div>
-    <script type="text/javascript">
-    //<![CDATA[
-        var newsletterSubscriberFormDetail = new VarienForm('newsletter-validate-detail');
-    //]]>
-    </script>
-  </div>
-						 								</div>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div> -->
+<img src="./Productos para mascotas_ comida y accesorios para animales_files/Banner_portes.png"></a>
+   
 </div> 
 </div>
         </div>
